@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import logo from "./assets/react.svg";
 import "@aws-amplify/ui-react/styles.css";
 import {
@@ -9,7 +10,7 @@ import {
   Card,
 } from "@aws-amplify/ui-react";
 
-function App({ signOut }) {
+function App({ signOut }: { signOut: any }) {
   return (
     <View className="App">
       <Card>
